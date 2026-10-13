@@ -20,7 +20,7 @@ from reportlab.platypus import (
 
 from app.database.db import get_connection
 from app.session.analyzer import get_session_metrics
-from app.session.performance import analyze_performance
+from app.session.performance import analyze_session_performance
 from app.session.scoring import calculate_performance_score
 
 
@@ -304,7 +304,7 @@ def generate_session_report(session_id):
         session_id
     )
 
-    analysis = analyze_performance(
+    analysis = analyze_session_performance(
         session_id
     )
 
