@@ -1,40 +1,38 @@
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Python cache
+# Python cache files
 __pycache__/
 *.py[cod]
-.pytest_cache/
+*$py.class
 
-# IDE
+# Test and coverage cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and editor files
 .vscode/
 .idea/
 
-# Local database
+# Environment variables and secrets
+.env
+.env.*
+
+# Generated reports and temporary graphs
+reports/*
+!reports/.gitkeep
+
+# Local application database
 data/*.db
 data/*.sqlite
 data/*.sqlite3
 
-# Local settings
-data/settings.json
-
-# Generated reports
-reports/*.pdf
-
 # Logs
 *.log
 
-# OS files
+# Operating system files
 .DS_Store
 Thumbs.db
-
-# Build / packaging
-build/
-dist/
-*.egg-info/
-
-# Environment variables
-.env
-.env.*
